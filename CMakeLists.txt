@@ -58,7 +58,7 @@ include_directories(
  )
 
 target_link_libraries(ros_type_introspection ${catkin_LIBRARIES})
-
+set_target_properties(ros_type_introspection PROPERTIES WINDOWS_EXPORT_ALL_SYMBOLS ON)
 
 #############
 ## Install ##
